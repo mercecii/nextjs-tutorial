@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: "Root Layout Next.js",
 };
 
-export default function RootLayout({
+export default function AboutLayout({
   children,
 }: {
   children: React.ReactNode;

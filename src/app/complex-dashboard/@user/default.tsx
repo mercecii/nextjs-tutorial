@@ -1,6 +1,6 @@
 import React from "react";
 
-const Revenue = () => {
+const DefaultUser = () => {
   return (
     <div
       style={{
@@ -11,9 +11,9 @@ const Revenue = () => {
         padding: "10px",
       }}
     >
-      Revenue
+      Default User
     </div>
   );
 };
 
-export default Revenue;
+export default DefaultUser;

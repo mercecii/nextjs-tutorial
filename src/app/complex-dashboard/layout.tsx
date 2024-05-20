@@ -13,6 +13,7 @@ type ComplexDashboardLayoutProps = PropsWithChildren<{
   user: ReactNode;
   revenue: ReactNode;
   notifications: ReactNode;
+  login: ReactNode;
 }>;
 
 export default function ComplexDashboardLayout({
@@ -20,17 +21,29 @@ export default function ComplexDashboardLayout({
   user,
   revenue,
   notifications,
+  login,
 }: ComplexDashboardLayoutProps) {
-  console.log({ user, revenue, notifications });
-  return (
+  const isLoggedIn = true;
+  return isLoggedIn ? (
     <html lang="en">
       <body>
-        <>{children}</>
-        <>{user}</>
-        <div>hi</div>
-        <>{revenue}</>
-        <>{notifications}</>
+        <div
+          style={{
+            display: "flex",
+            height: "200px",
+            border: "0.5px dotted black",
+            margin: "10px",
+            padding: "10px",
+          }}
+        >
+          <>{children}</>
+          <>{user}</>
+          <>{revenue}</>
+          <>{notifications}</>
+        </div>
       </body>
     </html>
+  ) : (
+    login
   );
 }

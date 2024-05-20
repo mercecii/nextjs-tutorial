@@ -1,6 +1,6 @@
 import React from "react";
 
-const Revenue = () => {
+const DefaultLogin = () => {
   return (
     <div
       style={{
@@ -11,9 +11,9 @@ const Revenue = () => {
         padding: "10px",
       }}
     >
-      Revenue
+      Default Login
     </div>
   );
 };
 
-export default Revenue;
+export default DefaultLogin;

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Revenue = () => {
+const DefaultRevenue = () => {
   return (
     <div
       style={{
@@ -16,4 +16,4 @@ const Revenue = () => {
   );
 };
 
-export default Revenue;
+export default DefaultRevenue;

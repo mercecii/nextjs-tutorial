@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-const Notifications = () => {
+const DefaultNotifications = () => {
   return (
     <div
       style={{
@@ -21,4 +21,4 @@ const Notifications = () => {
   );
 };
 
-export default Notifications;
+export default DefaultNotifications;
